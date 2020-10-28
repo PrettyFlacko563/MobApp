@@ -1,0 +1,101 @@
+<html>
+<head>
+<title>Main2.kt</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cc7832;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #6897bb;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Main2.kt</font>
+</center></td></tr></table>
+<pre><span class="s0">fun </span><span class="s1">main() {</span>
+
+    <span class="s0">val </span><span class="s1">f1 = Fraction()</span>
+    <span class="s1">f1.numerator = </span><span class="s2">1F</span>
+    <span class="s1">f1.denuminator = </span><span class="s2">2F</span>
+
+    <span class="s0">val </span><span class="s1">f2 = Fraction()</span>
+    <span class="s1">f2.numerator = </span><span class="s2">1F</span>
+    <span class="s1">f2.denuminator = </span><span class="s2">3F</span>
+
+    <span class="s0">val </span><span class="s1">f3 = f1.mimateba(f2)</span>
+    <span class="s1">println(f3.numerator)</span>
+    <span class="s1">println(f3.denuminator)</span>
+
+<span class="s1">}</span>
+
+         <span class="s0">class </span><span class="s1">Fraction {</span>
+
+         <span class="s0">var </span><span class="s1">numerator: Float = </span><span class="s2">2F</span>
+         <span class="s0">var </span><span class="s1">denuminator: Float = </span><span class="s2">3F</span>
+
+         <span class="s0">fun </span><span class="s1">mimateba(fraction: Fraction) : Fraction {</span>
+
+             <span class="s0">val </span><span class="s1">d = denuminator*fraction.denuminator</span>
+             <span class="s0">val </span><span class="s1">n1 = d/denuminator*numerator</span>
+             <span class="s0">val </span><span class="s1">n2 = d/fraction.denuminator*fraction.numerator</span>
+             <span class="s0">val </span><span class="s1">m = Fraction()</span>
+             <span class="s1">m.numerator = n1+n2</span>
+             <span class="s1">m.denuminator = d</span>
+             <span class="s0">return </span><span class="s1">m</span>
+         <span class="s1">}</span>
+     <span class="s1">}</span>
+
+<span class="s0">fun </span><span class="s1">main2() {</span>
+
+    <span class="s0">val </span><span class="s1">q1 = Fraction()</span>
+    <span class="s1">q1.numerator = </span><span class="s2">2F</span>
+    <span class="s1">q1.denuminator = </span><span class="s2">3F</span>
+
+    <span class="s0">val </span><span class="s1">q2 = Fraction()</span>
+    <span class="s1">q2.numerator = </span><span class="s2">3F</span>
+    <span class="s1">q2.denuminator = </span><span class="s2">4F</span>
+
+    <span class="s0">val </span><span class="s1">q3 = q1.numerator*q2.numerator/q1.denuminator*q2.denuminator</span>
+    <span class="s1">println(q3)</span>
+
+
+        <span class="s0">class </span><span class="s1">Fraction2 {</span>
+
+        <span class="s0">var </span><span class="s1">numerator: Float = </span><span class="s2">2F</span>
+        <span class="s0">var </span><span class="s1">denuminator: Float = </span><span class="s2">3F</span>
+        <span class="s0">fun </span><span class="s1">gamravleba(fraction: Fraction) : Fraction {</span>
+
+            <span class="s0">val </span><span class="s1">w = numerator*fraction.numerator</span>
+            <span class="s0">val </span><span class="s1">v1 = denuminator*fraction.denuminator</span>
+            <span class="s0">val </span><span class="s1">v2 = w/fraction.denuminator*fraction.numerator</span>
+            <span class="s0">val </span><span class="s1">y = Fraction()</span>
+            <span class="s1">y.numerator = w</span>
+            <span class="s1">y.denuminator = v1</span>
+            <span class="s0">return </span><span class="s1">y</span>
+        <span class="s1">}</span>
+    <span class="s1">}</span>
+
+
+<span class="s1">}</span>
+
+
+
+<span class="s0">fun </span><span class="s1">main3() {</span>
+
+    <span class="s0">val </span><span class="s1">t1 = Fraction()</span>
+    <span class="s1">t1.numerator = </span><span class="s2">9F</span>
+    <span class="s1">t1.denuminator = </span><span class="s2">27F</span>
+
+    <span class="s0">val </span><span class="s1">t2 = t1.numerator/</span><span class="s2">9</span>
+    <span class="s0">val </span><span class="s1">t3 = t1.denuminator/</span><span class="s2">9</span>
+    <span class="s1">println(t2)</span>
+    <span class="s1">println(t3)</span>
+<span class="s1">}</span>
+
+
+
+</pre>
+</body>
+</html>
